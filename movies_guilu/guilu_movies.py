@@ -12,7 +12,7 @@ class Search:
         valida_dois = False
         valida = Valida()
         users = valida.user_read()
-        print(users)
+      
            
         
         params = {

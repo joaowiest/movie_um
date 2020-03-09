@@ -2,8 +2,7 @@ from datetime import datetime
 import json
 
 
-class Valida:
-        
+class Valida:        
     def valid_CPF(self, user, users):
         verifica = False
         for i in users:
@@ -33,6 +32,7 @@ class Valida:
 
         return cliente_cadastrado        
 
+
     def movie_read(self):
         movies = []
         try:
@@ -43,6 +43,7 @@ class Valida:
         
         return movies
             
+            
     def movie_write(self,movies):
         with open('movie.json','w') as file:
             json.dump(movies, file, indent = 2)
@@ -50,9 +51,7 @@ class Valida:
 
     def date(self):
         date = datetime.today()
-        date = date.strftime('%m-%d-%y')
-        
-        
+        date = date.strftime('%m-%d-%y')       
         return date
         
     
@@ -69,11 +68,13 @@ class Valida:
         elif(escolha_um == 3):
             status = 'vai ver o filme'
             return status
+      
         
     def user_write(self,users):
         with open('user.json','w') as file:
             json.dump(users, file, indent = 2)
             print('alterado')
+
 
     def user_read(self):
         try:

@@ -1,33 +1,5 @@
 [
   {
-    "name": "1",
-    "email": "1@",
-    "CPF": 1,
-    "adress": "x",
-    "password": "11",
-    "date": "03-06-20",
-    "favorites": [
-      {
-        "nome": "xxx",
-        "ano": "2002",
-        "genero": "Action, Adventure, Thriller",
-        "diretor": "Rob Cohen",
-        "status": "vai ver o filme",
-        "data_favoritos": "03-06-20",
-        "data_alteracao": "03-06-20"
-      },
-      {
-        "nome": "x",
-        "ano": "2011",
-        "genero": "Crime, Drama, Thriller",
-        "diretor": "Jon Hewitt",
-        "status": "vai ver o filme",
-        "data_favoritos": "03-06-20",
-        "data_alteracao": "03-06-20"
-      }
-    ]
-  },
-  {
     "name": "2",
     "email": "2@",
     "CPF": 2,
@@ -43,6 +15,34 @@
         "status": "vai ver o filme",
         "data_favoritos": "03-06-20",
         "data_alteracao": "03-06-20"
+      }
+    ]
+  },
+  {
+    "name": "1",
+    "email": "1@",
+    "CPF": 1,
+    "adress": "z",
+    "password": "1",
+    "date": "03-09-20",
+    "favorites": [
+      {
+        "nome": "xxx",
+        "ano": "2002",
+        "genero": "Action, Adventure, Thriller",
+        "diretor": "Rob Cohen",
+        "status": "ja viu o filme",
+        "data_favoritos": "03-09-20",
+        "data_alteracao": "03-09-20"
+      },
+      {
+        "nome": "4",
+        "ano": "2004",
+        "genero": "Drama, Mystery, Sci-Fi",
+        "diretor": "Ilya Khrzhanovskiy",
+        "status": "ja viu o filme",
+        "data_favoritos": "03-09-20",
+        "data_alteracao": "03-09-20"
       }
     ]
   }

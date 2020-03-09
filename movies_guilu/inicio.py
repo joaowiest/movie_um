@@ -3,6 +3,7 @@ from user import User
 from guilu_movies import Search
 from exclui import Exclu
 from ver_movie import Ver_movie
+from genero import Genre
 
 
 def initial():
@@ -10,7 +11,9 @@ def initial():
 
     while(choice != 0):
         print('\nescolha \n\n0 para sair \n1 ser registrado \n2 pesquisar filme\n')
-        print('3 quer ver sua lista de desejos \n4 excluir o filme')
+        print('3 quer ver sua lista de desejos \n4 excluir o filme \n5 excluir o usuario')
+        print('6 indicacao')
+        
         choice = int(input())
         
         if(choice == 0):
@@ -31,7 +34,16 @@ def initial():
         
         elif(choice == 4):
             exclui_movie = Exclu()
-            exclui_movie.excluir()
+            exclui_movie.excluir_movie()
+        
+        elif(choice == 5):
+            exclui_movie = Exclu()
+            exclui_movie.excluir_user()
+        
+        elif(choice == 6):
+            genre = Genre()
+            genre.choice_genre()
+            
         else:
             print('Carai borracha...')
             initial()     

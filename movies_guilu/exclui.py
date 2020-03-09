@@ -1,37 +1,52 @@
 import json
-
+from  valid_user import Valida
 
 class Exclu:
-    def __init__(self):
-        self.name_movie = input("What is the name of the movie(Qual é o nome do filme):").lower().strip()
-    
-    def excluir(self):
+    def excluir_movie(self):
+        valida = Valida()
+        users = valida.user_read()
         exclui_movie = []
         vai = False
         foi = True
-        
-        try:
-            with open('movie.json') as file:
-                exclui_movie = json.load(file)
+        name_movie = input("Qual é o nome do filme: ").lower().strip()
+        email = input('escreva seu email: ')
+        password = input('escreva seu password: ')
+            
+        for i in users:
+            if i['email'] == email :
+                if i['password'] == password:        
+                    for j in i['favorites']:
+                        if j['nome'] == self.name_movie:
+                            print(j)
+                            i['favorites'].remove(j) 
+                            print('\nfilme apagado')
+                            valida_dois = True
+                            valida.user_write(users)
+                            break
                 
-        except:
-            print('movie not found(filme não encontrado)')
-            foi = False     
+                        else:
+                            valida_dois = False
+                   
+                else:
+                    pass    
+                
+            else:
+                pass
+
+    def  excluir_user(self):
+        valida = Valida()
+        users = valida.user_read()
         
-        print(exclui_movie)       
-        if(foi == True):
-            for i in exclui_movie:  
-                if(i['nome'] == self.name_movie):
-                    exclui_movie.remove(i) 
-                    vai = True
-                    break
+        email = input('escreva seu email: ')
+        password = input('escreva seu password: ')
+            
+        for i in users:    
+            if i['email'] == email :
+                if i['password'] == password:        
+                    users.remove(i)
+                    valida.user_write(users)
                 
                 else:
-                    vai = False
-            
-            if(vai == True):
-                print('filme apagado')
-                with open('movie.json', 'w') as file:
-                    json.dump(exclui_movie, file, indent = 2)
+                    pass
             else:
-                print('não foi kkkk')
+                pass
