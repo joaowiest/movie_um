@@ -1,0 +1,91 @@
+[
+  {
+    "nome": "toy story",
+    "ano": "1995",
+    "genero": "Animation, Adventure, Comedy, Family, Fantasy",
+    "diretor": "John Lasseter",
+    "status": "go see the movie(vai ver o filme)",
+    "data_favoritos": "03-05-20"
+  },
+  {
+    "nome": "lego batman: arkham city vol. 2",
+    "ano": "2017",
+    "genero": "Animation, Short",
+    "diretor": "Ramsey Eassa",
+    "status": "go see the movie(vai ver o filme)",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "sonic",
+    "ano": "2013",
+    "genero": "Short, Action, Adventure, Fantasy, Sci-Fi",
+    "diretor": "Eddie Lebron",
+    "status": "ja viu o filme",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "sonic",
+    "ano": "2013",
+    "genero": "Short, Action, Adventure, Fantasy, Sci-Fi",
+    "diretor": "Eddie Lebron",
+    "status": "go see the movie(vai ver o filme)",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "xxx",
+    "ano": "2002",
+    "genero": "Action, Adventure, Thriller",
+    "diretor": "Rob Cohen",
+    "status": "ja viu o filme",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "xxx",
+    "ano": "2002",
+    "genero": "Action, Adventure, Thriller",
+    "diretor": "Rob Cohen",
+    "status": "ja viu o filme",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "xxx",
+    "ano": "2002",
+    "genero": "Action, Adventure, Thriller",
+    "diretor": "Rob Cohen",
+    "status": "ja viu o filme",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "xxx",
+    "ano": "2002",
+    "genero": "Action, Adventure, Thriller",
+    "diretor": "Rob Cohen",
+    "status": "ja viu o filme",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "x",
+    "ano": "2011",
+    "genero": "Crime, Drama, Thriller",
+    "diretor": "Jon Hewitt",
+    "status": "ja viu o filme",
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  },
+  {
+    "nome": "the black list",
+    "ano": "1916",
+    "genero": "Animation, Short",
+    "diretor": "W.C. Morris",
+    "status": null,
+    "data_favoritos": "03-05-20",
+    "data_alteracao": "03-05-20"
+  }
+]
