@@ -1,5 +1,7 @@
 import json
 from  valid_user import Valida
+import getpass
+
 
 class Exclu:
     def excluir_movie(self):
@@ -10,7 +12,7 @@ class Exclu:
         foi = True
         name_movie = input("Qual é o nome do filme: ").lower().strip()
         email = input('escreva seu email: ')
-        password = input('escreva seu password: ')
+        password = getpass.getpass('escreva seu password(vai estar invisivel ):  ')
             
         for i in users:
             if i['email'] == email :
@@ -32,21 +34,36 @@ class Exclu:
                 
             else:
                 pass
+            
+        if valida_dois == False:
+            print('digito incorreto ou filme inexistente')
+            print('não foi apagado')
+        else:
+            pass
+        
 
     def  excluir_user(self):
         valida = Valida()
         users = valida.user_read()
-        
+        valida_dois = False
         email = input('escreva seu email: ')
-        password = input('escreva seu password: ')
+        password = getpass.getpass('escreva seu password(vai estar invisivel ):  ')
             
         for i in users:    
             if i['email'] == email :
                 if i['password'] == password:        
                     users.remove(i)
                     valida.user_write(users)
-                
+                    valida_dois = True
+                    break
                 else:
-                    pass
+                    valida_dois = False
             else:
                 pass
+        
+        if valida_dois == False:
+            print('digito incorreto')
+            print('não foi apagado')
+        else:
+            pass
+       

@@ -9,7 +9,7 @@ class User:
         self.email_user = input('qual o seu email: ')
         self.CPF_user = int(input('qual o seu CPF: '))
         self.adress_user = input('qual é o seu endereço: ')
-        self.password = input('escolha uma senha')
+        self.password = input('escolha uma senha: ')
          
     def user(self):     
         user = {}

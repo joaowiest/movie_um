@@ -1,5 +1,6 @@
+import requests, json
 from datetime import datetime
-import json
+
 
 
 class Valida:        
@@ -39,8 +40,10 @@ class Valida:
             with open('movie.json') as file:
                 movies = json.load(file)
         except:
-            print("voce nao tem favoritos")
-        
+            print('\n\n###############################')
+            print("nao tem favoritos")
+            print('###############################')
+            
         return movies
             
             
@@ -56,7 +59,13 @@ class Valida:
         
     
     def status(self):
-        escolha_um = int(input("status \n1 ja viu o filme \n2 estavendo o filme \n3 vai ver o filme:\n "))
+        try:
+            escolha_um = int(input("\n\nstatus \n1 ja viu o filme \n2 estavendo o filme \n3 vai ver o filme:\n "))
+        except:
+            print('\n\n###############################')
+            print('digito incorreto')
+            print('###############################')
+
         if(escolha_um == 1):
             status = 'ja viu o filme'
             return status
@@ -82,4 +91,24 @@ class Valida:
                 users = json.load(file)
                 return users
         except:
+            print('\n\n###############################')
             print('não tem usuario')
+            print('###############################')
+    def returns_movie(self, nome_filme):
+        try:
+            params = {
+                'apikey':'58a0eaad',
+                't':nome_filme    
+            }
+
+            url = 'http://www.omdbapi.com/'
+
+            requests_filme = requests.get(url, params)
+            request = requests_filme.json()
+            print(request['Title'])
+            return request
+        except:
+            print('\n\n###############################')
+            print('filme não encontrado')
+            print('###############################')
+            return 0

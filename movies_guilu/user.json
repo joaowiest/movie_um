@@ -15,6 +15,15 @@
         "status": "vai ver o filme",
         "data_favoritos": "03-06-20",
         "data_alteracao": "03-06-20"
+      },
+      {
+        "nome": "up",
+        "ano": "2009",
+        "genero": "Animation, Adventure, Comedy, Family",
+        "diretor": "Pete Docter, Bob Peterson(co-director)",
+        "status": "ja viu o filme",
+        "data_favoritos": "03-10-20",
+        "data_alteracao": "03-10-20"
       }
     ]
   },
@@ -43,7 +52,62 @@
         "status": "ja viu o filme",
         "data_favoritos": "03-09-20",
         "data_alteracao": "03-09-20"
+      },
+      {
+        "nome": "x",
+        "ano": "2011",
+        "genero": "Crime, Drama, Thriller",
+        "diretor": "Jon Hewitt",
+        "status": "vai ver o filme",
+        "data_favoritos": "03-10-20",
+        "data_alteracao": "03-10-20"
+      },
+      {
+        "nome": "toy story",
+        "ano": "1995",
+        "genero": "Animation, Adventure, Comedy, Family, Fantasy",
+        "diretor": "John Lasseter",
+        "status": "ja viu o filme",
+        "data_favoritos": "03-10-20",
+        "data_alteracao": "03-10-20"
+      },
+      {
+        "nome": "up",
+        "ano": "2009",
+        "genero": "Animation, Adventure, Comedy, Family",
+        "diretor": "Pete Docter, Bob Peterson(co-director)",
+        "status": "estavendo o filme",
+        "data_favoritos": "03-10-20",
+        "data_alteracao": "03-10-20"
       }
     ]
+  },
+  {
+    "name": "juriscleudo",
+    "email": "juriscleudolindo@gmail.com",
+    "CPF": 19023134,
+    "adress": "arlindo da silva",
+    "password": "12349",
+    "date": "03-10-20",
+    "favorites": [
+      {
+        "nome": "1",
+        "ano": "2013",
+        "genero": "Documentary, History, Sport",
+        "diretor": "Paul Crowder",
+        "status": "vai ver o filme",
+        "data_favoritos": "03-10-20",
+        "data_alteracao": "03-10-20"
+      }
+    ]
+  },
+  {
+    "name": "h",
+    "email": "hehehe",
+    "CPF": 436,
+    "adress": "hh",
+    "password": "0",
+    "date": "03-10-20",
+    "favorites": []
   }
 ]

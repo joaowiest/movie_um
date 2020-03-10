@@ -10,14 +10,23 @@ def initial():
     choice = 20
 
     while(choice != 0):
+        print('\n###############################')
         print('\nescolha \n\n0 para sair \n1 ser registrado \n2 pesquisar filme\n')
         print('3 quer ver sua lista de desejos \n4 excluir o filme \n5 excluir o usuario')
         print('6 indicacao')
-        
-        choice = int(input())
+        print('###############################')
+        try:
+            choice = int(input())
+        except:
+            print('\n\n###############################')
+            print('digito incorreto')
+            print('###############################')
+            initial()
         
         if(choice == 0):
+            print('\n\n###############################')
             print('obrigado por usar guiluflix até o próximo')
+            print('###############################')
             break
         elif(choice == 1):
             class_user =  User() 
@@ -45,7 +54,9 @@ def initial():
             genre.choice_genre()
             
         else:
-            print('Carai borracha...')
+            print('###############################')
+            print('digito incorreto')
+            print('###############################')
             initial()     
 
 initial()
