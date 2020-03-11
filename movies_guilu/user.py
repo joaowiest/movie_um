@@ -4,24 +4,43 @@ from  valid_user import Valida
 
 
 class User:
-    def __init__(self):
-        self.name_user = input('qual o seu nome: ')
-        self.email_user = input('qual o seu email: ')
-        self.CPF_user = int(input('qual o seu CPF: '))
-        self.adress_user = input('qual é o seu endereço: ')
-        self.password = input('escolha uma senha: ')
+    
          
     def user(self):     
         user = {}
         valida = Valida()
         date = valida.date()
-        
+        try:
+            name_user = input('qual o seu nome: ')
+            email_user = input('qual o seu email: ')
+            CPF_user = int(input('qual o seu CPF: '))
+            adress_user = input('qual é o seu endereço: ')
+            password = input('escolha uma senha: ')
+            if CPF_user < 100000000000 and CPF_user > 9999999999:
+                pass
+            else:
+                print('CPF invalido')
+                self.user()                
+            user = {
+            'name':name_user,
+            'email':email_user,
+            'CPF':CPF_user,
+            'adress':adress_user,
+            'password':password,
+            'date':date,
+            'favorites':[]
+            }
+            return user
+        except:
+            print('CPF invalido')
+            self.user()
+     
         user = {
-        'name':self.name_user,
-        'email':self.email_user,
-        'CPF':self.CPF_user,
-        'adress':self.adress_user,
-        'password':self.password,
+        'name':name_user,
+        'email':email_user,
+        'CPF':CPF_user,
+        'adress':adress_user,
+        'password':password,
         'date':date,
         'favorites':[]
         }

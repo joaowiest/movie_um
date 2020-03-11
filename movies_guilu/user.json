@@ -109,5 +109,42 @@
     "password": "0",
     "date": "03-10-20",
     "favorites": []
+  },
+  {
+    "name": "Viviane",
+    "email": "viviane.sp13@gmail.com",
+    "CPF": 49053020802,
+    "adress": "Rua Doutor Osmany Borges Pinto",
+    "password": "628300",
+    "date": "03-11-20",
+    "favorites": [
+      {
+        "nome": "hidden figures",
+        "ano": "2016",
+        "genero": "Biography, Drama, History",
+        "diretor": "Theodore Melfi",
+        "status": "ja viu o filme",
+        "data_favoritos": "03-11-20",
+        "data_alteracao": "03-11-20"
+      }
+    ]
+  },
+  {
+    "name": "1",
+    "email": "j@",
+    "CPF": 12345678910,
+    "adress": "z",
+    "password": "12",
+    "date": "03-11-20",
+    "favorites": []
+  },
+  {
+    "name": "e",
+    "email": "e@",
+    "CPF": 987654321,
+    "adress": "n",
+    "password": "n",
+    "date": "03-11-20",
+    "favorites": []
   }
 ]
